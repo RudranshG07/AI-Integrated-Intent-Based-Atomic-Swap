@@ -1,0 +1,26 @@
+{
+  "contractName": "HTLC",
+  "address": "0x10a02aB3414F907da08165Ba87C3F2cE9aF652E1",
+  "network": "sepolia",
+  "chainId": 11155111,
+  "deployer": "0x2A185AB92F0e095299584122B12D1aa752C34C3a",
+  "timestamp": "2025-08-10T05:03:52.173Z",
+  "transactionHash": "0x7e432f1c8b127a50a75dd60aae54424c57f1192303a6d5154a7a94ef9de63d0e",
+  "blockNumber": "pending",
+  "gasLimit": "1297676",
+  "gasPrice": "20000000000",
+  "features": [
+    "Rate limiting",
+    "Emergency stop",
+    "Enhanced security",
+    "Batch operations",
+    "Comprehensive events"
+  ],
+  "constants": {
+    "MIN_TIMELOCK": "1 hour",
+    "MAX_TIMELOCK": "7 days",
+    "SAFETY_BUFFER": "6 hours",
+    "MAX_SWAPS_PER_USER": 10,
+    "RATE_LIMIT_WINDOW": "1 day"
+  }
+}

@@ -1,46 +1,149 @@
-# Getting Started with Create React App
+# Atomic Swap DApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A decentralized application for trustless atomic swaps between AVAX and ETH across Avalanche and Ethereum networks.
+
+## 🌟 Features
+
+- **Trustless Swaps**: No intermediaries required using Hash Time-Locked Contracts (HTLCs)
+- **Cross-Chain**: Support for Avalanche ↔ Ethereum swaps
+- **User-Friendly**: Clean, intuitive interface with step-by-step guidance
+- **Secure**: Built-in security measures and comprehensive error handling
+- **Testnet Support**: Full testing on Fuji (Avalanche) and Goerli (Ethereum) testnets
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 16+ 
+- MetaMask wallet
+- Test tokens for testnets (AVAX on Fuji, ETH on Goerli)
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Copy and configure environment variables
+cp .env.example .env
+# Edit .env with your RPC URLs and contract addresses
+
+# Start development server
+npm start
+```
+
+### Smart Contract Deployment
+
+```bash
+# Navigate to contracts directory
+cd contracts
+
+# Install Hardhat dependencies (if not already done)
+npm install hardhat @nomiclabs/hardhat-ethers ethers
+
+# Deploy to Fuji testnet
+npx hardhat run scripts/deploy.js --network fuji
+
+# Deploy to Sepolia testnet  
+npx hardhat run scripts/deploy.js --network sepolia
+
+# Update contract addresses in your .env file
+```
+
+## 📋 How It Works
+
+### Creating a Swap
+
+1. **Generate Secret**: Click "Generate Secret" to create a unique secret key
+2. **Enter Details**: Fill in participant address, amount, and timelock
+3. **Deploy Contract**: Submit transaction to create HTLC on your network
+4. **Share Info**: Send contract ID and hash to the other party
+
+### Claiming a Swap
+
+1. **Get Contract ID**: Receive contract ID from swap initiator
+2. **Monitor**: Wait for initiator to claim their side (revealing the secret)
+3. **Extract Secret**: Copy the secret from the initiator's claim transaction
+4. **Claim Funds**: Use the secret to claim your funds before timeout
+
+## 🔧 Technology Stack
+
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Blockchain**: Solidity 0.8.19, Hardhat
+- **Web3**: ethers.js v5
+- **Deployment**: Vercel
+- **Networks**: Avalanche C-Chain, Ethereum
+
+## 🏗️ Architecture
+
+```
+├── src/
+│   ├── components/         # React components
+│   ├── services/           # Web3 integration
+│   ├── types/              # TypeScript definitions
+│   └── config/             # Network configurations
+├── contracts/              # Smart contracts
+│   ├── HTLC.sol           # Hash Time-Locked Contract
+│   └── hardhat.config.js   # Hardhat configuration
+└── public/                # Static assets
+```
+
+## 🔐 Security Features
+
+- **Time Locks**: Automatic refunds prevent permanent fund loss
+- **Hash Locks**: Cryptographic security using SHA-256
+- **Input Validation**: Comprehensive parameter checking
+- **Error Handling**: Graceful handling of edge cases
+- **Audit Ready**: Clean, well-documented smart contracts
+
+## 🧪 Testing
+
+The application includes comprehensive testing on both testnets:
+
+- **Fuji Testnet**: Avalanche's official testnet
+- **Sepolia Testnet**: Ethereum's official testnet
+
+Get test tokens:
+- Fuji AVAX: https://faucet.avax.network/
+- Sepolia ETH: https://sepoliafaucet.com/
+
+## 📊 Supported Networks
+
+### Mainnet
+- Avalanche C-Chain (ChainID: 43114)
+- Ethereum Mainnet (ChainID: 1)
+
+### Testnet
+- Avalanche Fuji (ChainID: 43113)
+- Ethereum Sepolia (ChainID: 11155111)
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ### `npm run build`
+Builds the app for production to the `build` folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm test`
+Launches the test runner in interactive watch mode
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚠️ Important Notes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Always test with small amounts first
+- Keep your secret key secure and never share publicly
+- Monitor swaps closely to avoid missing claim windows
+- Double-check all addresses and amounts before creating swaps
+- Use testnets for learning and development
 
-### `npm run eject`
+## 🤝 Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📄 License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT License - see LICENSE file for details

@@ -1,0 +1,22 @@
+{
+  "avalanche-fuji": {
+    "htlcAddress": "0x42bf151c55A03c2659461DC87b8502276dF40be1",
+    "deployedAt": "2025-08-10T05:03:19.283Z",
+    "txHash": "0x6cde8734d5c93800874a12721cfd923da9e4fada7c28dd2c440a708c4ada1e42"
+  },
+  "ethereum-sepolia": {
+    "htlcAddress": "0x10a02aB3414F907da08165Ba87C3F2cE9aF652E1",
+    "deployedAt": "2025-08-10T05:03:52.174Z",
+    "txHash": "0x7e432f1c8b127a50a75dd60aae54424c57f1192303a6d5154a7a94ef9de63d0e"
+  },
+  "avalanche-mainnet": {
+    "htlcAddress": "0xE4843c1dFb366e59C694317165B2BaCA654E04a6",
+    "deployedAt": "2025-08-09T06:15:43.978Z",
+    "txHash": "0x71373e766fce3766f23d65f65ff010ef23952c76e89c1cf3894e95a71b5b4c40"
+  },
+  "ethereum-mainnet": {
+    "htlcAddress": "0xCAE806c48DB297B06c3Ad9495095FE0FC1eaa71a",
+    "deployedAt": "2025-08-09T06:16:50.817Z",
+    "txHash": "0xfc1c2757ac18f92fce7e0b5d2fac203923ad9ef647a1430a9e1172079329ae89"
+  }
+}

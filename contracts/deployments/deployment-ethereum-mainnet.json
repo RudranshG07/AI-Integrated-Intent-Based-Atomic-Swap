@@ -1,0 +1,26 @@
+{
+  "contractName": "HTLC",
+  "address": "0xCAE806c48DB297B06c3Ad9495095FE0FC1eaa71a",
+  "network": "homestead",
+  "chainId": 1,
+  "deployer": "0x2A185AB92F0e095299584122B12D1aa752C34C3a",
+  "timestamp": "2025-08-09T06:16:50.816Z",
+  "transactionHash": "0xfc1c2757ac18f92fce7e0b5d2fac203923ad9ef647a1430a9e1172079329ae89",
+  "blockNumber": 23101651,
+  "gasLimit": "1297676",
+  "gasPrice": "682780262",
+  "features": [
+    "Rate limiting",
+    "Emergency stop",
+    "Enhanced security",
+    "Batch operations",
+    "Comprehensive events"
+  ],
+  "constants": {
+    "MIN_TIMELOCK": "1 hour",
+    "MAX_TIMELOCK": "7 days",
+    "SAFETY_BUFFER": "6 hours",
+    "MAX_SWAPS_PER_USER": 10,
+    "RATE_LIMIT_WINDOW": "1 day"
+  }
+}

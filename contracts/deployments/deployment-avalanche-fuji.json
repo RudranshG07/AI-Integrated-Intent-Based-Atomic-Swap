@@ -1,0 +1,26 @@
+{
+  "contractName": "HTLC",
+  "address": "0x42bf151c55A03c2659461DC87b8502276dF40be1",
+  "network": "unknown",
+  "chainId": 43113,
+  "deployer": "0x17aA793f91d1c0624F119D7cAC46BF1054c42b0D",
+  "timestamp": "2025-08-10T05:03:19.281Z",
+  "transactionHash": "0x6cde8734d5c93800874a12721cfd923da9e4fada7c28dd2c440a708c4ada1e42",
+  "blockNumber": 44566043,
+  "gasLimit": "1297676",
+  "gasPrice": "25000000000",
+  "features": [
+    "Rate limiting",
+    "Emergency stop",
+    "Enhanced security",
+    "Batch operations",
+    "Comprehensive events"
+  ],
+  "constants": {
+    "MIN_TIMELOCK": "1 hour",
+    "MAX_TIMELOCK": "7 days",
+    "SAFETY_BUFFER": "6 hours",
+    "MAX_SWAPS_PER_USER": 10,
+    "RATE_LIMIT_WINDOW": "1 day"
+  }
+}
