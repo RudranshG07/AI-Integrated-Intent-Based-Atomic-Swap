@@ -1,14 +1,15 @@
-# Atomic Swap DApp
+# 🤖 AI Intent-Based Atomic Swap DApp
 
-A decentralized application for trustless atomic swaps between AVAX and ETH across Avalanche and Ethereum networks.
+An AI-powered decentralized application that enables trustless cross-chain atomic swaps using natural language processing. Simply type "I want to swap 1 AVAX for ETH" and let AI handle the rest!
 
 ## 🌟 Features
 
-- **Trustless Swaps**: No intermediaries required using Hash Time-Locked Contracts (HTLCs)
-- **Cross-Chain**: Support for Avalanche ↔ Ethereum swaps
-- **User-Friendly**: Clean, intuitive interface with step-by-step guidance
-- **Secure**: Built-in security measures and comprehensive error handling
-- **Testnet Support**: Full testing on Fuji (Avalanche) and Goerli (Ethereum) testnets
+- **🤖 AI-Powered Intent Generation**: Type natural language like "I want to swap 1 AVAX for ETH" 
+- **⛓️ Trustless Cross-Chain Swaps**: Direct Avalanche ↔ Ethereum swaps using HTLCs
+- **🎯 Intent-Based Matching**: Real-time marketplace matching complementary swap intentions
+- **🔒 Enterprise Security**: Rate limiting, emergency stops, and unhackable architecture  
+- **✨ Professional UX**: Success animations, live updates, and MetaMask integration
+- **🌐 Testnet Support**: Full testing on Fuji (Avalanche) and Sepolia (Ethereum) testnets
 
 ## 🚀 Quick Start
 
