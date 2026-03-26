@@ -1,17 +1,17 @@
-# 🤖 AI Intent-Based Atomic Swap DApp
+# AI Intent-Based Atomic Swap DApp
 
 An AI-powered decentralized application that enables trustless cross-chain atomic swaps using natural language processing. Simply type "I want to swap 1 AVAX for ETH" and let AI handle the rest!
 
-## 🌟 Features
+## Features
 
-- **🤖 AI-Powered Intent Generation**: Type natural language like "I want to swap 1 AVAX for ETH" 
-- **⛓️ Trustless Cross-Chain Swaps**: Direct Avalanche ↔ Ethereum swaps using HTLCs
-- **🎯 Intent-Based Matching**: Real-time marketplace matching complementary swap intentions
-- **🔒 Enterprise Security**: Rate limiting, emergency stops, and unhackable architecture  
-- **✨ Professional UX**: Success animations, live updates, and MetaMask integration
-- **🌐 Testnet Support**: Full testing on Fuji (Avalanche) and Sepolia (Ethereum) testnets
+- **AI-Powered Intent Generation**: Type natural language like "I want to swap 1 AVAX for ETH" 
+- **Trustless Cross-Chain Swaps**: Direct Avalanche ↔ Ethereum swaps using HTLCs
+- **Intent-Based Matching**: Real-time marketplace matching complementary swap intentions
+- **Enterprise Security**: Rate limiting, emergency stops, and unhackable architecture  
+- **Professional UX**: Success animations, live updates, and MetaMask integration
+- **Testnet Support**: Full testing on Fuji (Avalanche) and Sepolia (Ethereum) testnets
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 # Update contract addresses in your .env file
 ```
 
-## 📋 How It Works
+## How It Works
 
 ### Creating a Swap
 
@@ -67,7 +67,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 3. **Extract Secret**: Copy the secret from the initiator's claim transaction
 4. **Claim Funds**: Use the secret to claim your funds before timeout
 
-## 🔧 Technology Stack
+## Technology Stack
 
 - **Frontend**: React 18, TypeScript, Tailwind CSS
 - **Blockchain**: Solidity 0.8.19, Hardhat
@@ -75,7 +75,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 - **Deployment**: Vercel
 - **Networks**: Avalanche C-Chain, Ethereum
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ├── src/
@@ -89,7 +89,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 └── public/                # Static assets
 ```
 
-## 🔐 Security Features
+## Security Features
 
 - **Time Locks**: Automatic refunds prevent permanent fund loss
 - **Hash Locks**: Cryptographic security using SHA-256
@@ -97,7 +97,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 - **Error Handling**: Graceful handling of edge cases
 - **Audit Ready**: Clean, well-documented smart contracts
 
-## 🧪 Testing
+## Testing
 
 The application includes comprehensive testing on both testnets:
 
@@ -108,7 +108,7 @@ Get test tokens:
 - Fuji AVAX: https://faucet.avax.network/
 - Sepolia ETH: https://sepoliafaucet.com/
 
-## 📊 Supported Networks
+## Supported Networks
 
 ### Mainnet
 - Avalanche C-Chain (ChainID: 43114)
@@ -129,7 +129,7 @@ Builds the app for production to the `build` folder
 ### `npm test`
 Launches the test runner in interactive watch mode
 
-## ⚠️ Important Notes
+## Important Notes
 
 - Always test with small amounts first
 - Keep your secret key secure and never share publicly
@@ -137,7 +137,7 @@ Launches the test runner in interactive watch mode
 - Double-check all addresses and amounts before creating swaps
 - Use testnets for learning and development
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -145,6 +145,4 @@ Launches the test runner in interactive watch mode
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
 
-MIT License - see LICENSE file for details
